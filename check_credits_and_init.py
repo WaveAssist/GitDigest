@@ -5,12 +5,27 @@ waveassist.init()
 
 # Credits estimate for GitFlow
 CREDITS_NEEDED_FOR_RUN = 0.3
+# Estimated processing time per repository (in seconds)
+# Accounts for: API calls, diff fetching, LLM analysis, report generation
+PROCESSING_TIME_PER_REPO = 180  # ~3 minutes per repo
+
+def fetch_credits_and_time_needed_for_run():
+    """Calculate credits and estimated time needed for the run."""
+    github_selected_resources = waveassist.fetch_data("github_selected_resources", default=[])
+    if not isinstance(github_selected_resources, list):
+        github_selected_resources = []
+    number_of_repos = len(github_selected_resources)
+    time_to_process = number_of_repos * PROCESSING_TIME_PER_REPO
+    return CREDITS_NEEDED_FOR_RUN, time_to_process
 
 print("GitFlow: Starting credits check and initialization...")
 
+# Calculate credits and time needed
+credits_needed_for_run, time_to_process = fetch_credits_and_time_needed_for_run()
+
 # Check credits and notify if insufficient
 success = waveassist.check_credits_and_notify(
-    required_credits=CREDITS_NEEDED_FOR_RUN,
+    required_credits=credits_needed_for_run,
     assistant_name="GitFlow",
 )
 
@@ -20,6 +35,10 @@ if not success:
     }
     waveassist.store_data("display_output", display_output, run_based=True, data_type="json")
     raise Exception("Credits were not available, the GitFlow run was skipped.")
+else:
+    waveassist.store_data(
+        "tentative_time_to_process", str(time_to_process), run_based=True, data_type="string"
+    )
 
 # Validate required inputs
 project_name = waveassist.fetch_data("project_name", default="")
