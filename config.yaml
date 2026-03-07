@@ -59,7 +59,7 @@ variables:
     scopes: ["repo"]
     required_resources: ["repos"]
     helper_message: "Connect your GitHub account to track repositories"
-    display_type: "base"
+    display_type: "no-webhook"
 
   - name: project_name
     key: project_name
