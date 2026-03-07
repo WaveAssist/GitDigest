@@ -7,7 +7,7 @@ import json
 # Initialize WaveAssist SDK for downstream node
 waveassist.init(check_credits=True)
 
-print("GitFlow: Starting business report generation...")
+print("GitDigest: Starting business report generation...")
 
 # LLM settings
 max_tokens = 2500
@@ -169,7 +169,7 @@ if total_changes == 0:
         "shipped_features": []
     }
     waveassist.store_data("business_report", business_report, data_type="json")
-    print("GitFlow: Business report generation completed (no activity).")
+    print("GitDigest: Business report generation completed (no activity).")
 else:
     # Build context
     analysis_context = build_analysis_context(repository_analyses, repository_contexts)
@@ -214,5 +214,5 @@ else:
         }
         waveassist.store_data("business_report", business_report, data_type="json")
 
-print("GitFlow: Business report generation completed.")
+print("GitDigest: Business report generation completed.")
 

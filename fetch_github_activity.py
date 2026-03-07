@@ -7,7 +7,7 @@ from typing import List, Dict, Any, Optional
 # Initialize WaveAssist SDK for downstream node
 waveassist.init(check_credits=True)
 
-print("GitFlow: Starting GitHub activity fetch...")
+print("GitDigest: Starting GitHub activity fetch...")
 
 # Time range: past 7 days
 DAYS_TO_FETCH = 7
@@ -407,5 +407,5 @@ total_prs = sum(len(data["pull_requests"]) for data in github_activity_data.valu
 
 print(f"✅ Fetched GitHub activity: {total_commits} commits, {total_prs} PRs across {len(github_activity_data)} repositories")
 print(f"📅 Report period: {report_date_range['start_date_formatted']} - {report_date_range['end_date_formatted']}")
-print("GitFlow: GitHub activity fetch completed.")
+print("GitDigest: GitHub activity fetch completed.")
 

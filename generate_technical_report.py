@@ -7,7 +7,7 @@ import json
 # Initialize WaveAssist SDK for downstream node
 waveassist.init(check_credits=True)
 
-print("GitFlow: Starting technical report generation...")
+print("GitDigest: Starting technical report generation...")
 
 # LLM settings
 max_tokens = 6000
@@ -181,7 +181,7 @@ if total_changes == 0:
         ]
     }
     waveassist.store_data("technical_report", technical_report, data_type="json")
-    print("GitFlow: Technical report generation completed (no activity).")
+    print("GitDigest: Technical report generation completed (no activity).")
 else:
     # Build context
     analysis_context = build_analysis_context(repository_analyses, repository_contexts)
@@ -219,5 +219,5 @@ else:
         }
         waveassist.store_data("technical_report", technical_report, data_type="json")
 
-print("GitFlow: Technical report generation completed.")
+print("GitDigest: Technical report generation completed.")
 
