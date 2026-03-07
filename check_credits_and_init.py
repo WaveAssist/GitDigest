@@ -3,23 +3,23 @@ import waveassist
 # Initialize WaveAssist SDK (no check_credits flag in the starting node)
 waveassist.init()
 
-# Credits estimate for GitFlow
+# Credits estimate for GitDigest
 CREDITS_NEEDED_FOR_RUN = 0.3
 
-print("GitFlow: Starting credits check and initialization...")
+print("GitDigest: Starting credits check and initialization...")
 
 # Check credits and notify if insufficient
 success = waveassist.check_credits_and_notify(
     required_credits=CREDITS_NEEDED_FOR_RUN,
-    assistant_name="GitFlow",
+    assistant_name="GitDigest",
 )
 
 if not success:
     display_output = {
-        "html_content": "<p>Credits were not available, the GitFlow run was skipped.</p>",
+        "html_content": "<p>Credits were not available, the GitDigest run was skipped.</p>",
     }
     waveassist.store_data("display_output", display_output, run_based=True, data_type="json")
-    raise Exception("Credits were not available, the GitFlow run was skipped.")
+    raise Exception("Credits were not available, the GitDigest run was skipped.")
 
 # Validate required inputs
 project_name = waveassist.fetch_data("project_name", default="")
@@ -48,7 +48,7 @@ if not isinstance(github_selected_resources, list) or len(github_selected_resour
     waveassist.store_data("display_output", display_output, run_based=True, data_type="json")
     raise Exception("No GitHub repositories selected.")
 
-print(f"GitFlow: Initialized for project '{str(project_name).strip()}'")
-print(f"GitFlow: Tracking {len(github_selected_resources)} repositories")
-print("GitFlow: Credits check complete and initialization finished.")
+print(f"GitDigest: Initialized for project '{str(project_name).strip()}'")
+print(f"GitDigest: Tracking {len(github_selected_resources)} repositories")
+print("GitDigest: Credits check complete and initialization finished.")
 

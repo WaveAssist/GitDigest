@@ -1,5 +1,5 @@
 """
-Pytest configuration and shared fixtures for GitFlow tests.
+Pytest configuration and shared fixtures for GitDigest tests.
 """
 import pytest
 from datetime import datetime, timezone, timedelta

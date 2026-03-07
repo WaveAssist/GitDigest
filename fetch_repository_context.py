@@ -8,7 +8,7 @@ import base64
 # Initialize WaveAssist SDK for downstream node
 waveassist.init(check_credits=True)
 
-print("GitFlow: Starting repository context fetch...")
+print("GitDigest: Starting repository context fetch...")
 
 # LLM settings
 max_tokens = 1500
@@ -230,5 +230,5 @@ if new_contexts_added:
 else:
     print("✓ All repository contexts already up to date")
 
-print("GitFlow: Repository context fetch completed.")
+print("GitDigest: Repository context fetch completed.")
 
