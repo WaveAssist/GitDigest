@@ -3,7 +3,7 @@ import waveassist
 # Initialize WaveAssist SDK (no check_credits flag in the starting node)
 waveassist.init()
 
-# Credits estimate for GitFlow
+# Credits estimate for GitDigest
 CREDITS_NEEDED_FOR_RUN = 0.3
 # Estimated processing time per repository (in seconds)
 # Accounts for: API calls, diff fetching, LLM analysis, report generation
@@ -18,23 +18,23 @@ def fetch_credits_and_time_needed_for_run():
     time_to_process = number_of_repos * PROCESSING_TIME_PER_REPO
     return CREDITS_NEEDED_FOR_RUN, time_to_process
 
-print("GitFlow: Starting credits check and initialization...")
+print("GitDigest: Starting credits check and initialization...")
 
 # Calculate credits and time needed
 credits_needed_for_run, time_to_process = fetch_credits_and_time_needed_for_run()
 
 # Check credits and notify if insufficient
 success = waveassist.check_credits_and_notify(
-    required_credits=credits_needed_for_run,
-    assistant_name="GitFlow",
+    required_credits=CREDITS_NEEDED_FOR_RUN,
+    assistant_name="GitDigest",
 )
 
 if not success:
     display_output = {
-        "html_content": "<p>Credits were not available, the GitFlow run was skipped.</p>",
+        "html_content": "<p>Credits were not available, the GitDigest run was skipped.</p>",
     }
     waveassist.store_data("display_output", display_output, run_based=True, data_type="json")
-    raise Exception("Credits were not available, the GitFlow run was skipped.")
+    raise Exception("Credits were not available, the GitDigest run was skipped.")
 else:
     waveassist.store_data(
         "tentative_time_to_process", str(time_to_process), run_based=True, data_type="string"
@@ -67,7 +67,7 @@ if not isinstance(github_selected_resources, list) or len(github_selected_resour
     waveassist.store_data("display_output", display_output, run_based=True, data_type="json")
     raise Exception("No GitHub repositories selected.")
 
-print(f"GitFlow: Initialized for project '{str(project_name).strip()}'")
-print(f"GitFlow: Tracking {len(github_selected_resources)} repositories")
-print("GitFlow: Credits check complete and initialization finished.")
+print(f"GitDigest: Initialized for project '{str(project_name).strip()}'")
+print(f"GitDigest: Tracking {len(github_selected_resources)} repositories")
+print("GitDigest: Credits check complete and initialization finished.")
 

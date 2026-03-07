@@ -9,7 +9,7 @@ from collections import defaultdict
 # Initialize WaveAssist SDK for downstream node
 waveassist.init(check_credits=True)
 
-print("GitFlow: Starting repository activity analysis...")
+print("GitDigest: Starting repository activity analysis...")
 
 # LLM settings
 max_tokens = 2500
@@ -435,5 +435,5 @@ for repo_path, activity_data in github_activity_data.items():
 
 total_changes = sum(len(a["changes"]) for a in repository_analyses)
 print(f"✅ Analysis complete: {total_changes} total changes across {len(repository_analyses)} repositories")
-print("GitFlow: Repository activity analysis completed.")
+print("GitDigest: Repository activity analysis completed.")
 

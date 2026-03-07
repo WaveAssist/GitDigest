@@ -1,12 +1,12 @@
-# GitFlow: Node Structure
+# GitDigest: Node Structure
 
-This document defines all workflow nodes for GitFlow, organized by the CID pipeline (Collection, Intelligence, Delivery). GitFlow is the **Ground Truth Report**: it reads **actual code diffs** (not PR titles or commit messages) and uses AI to produce leadership-ready business and technical narratives. It is **project-centric** and **multi-repo**—synthesizing your entire stack (frontend, backend, infra) into one unified product narrative.
+This document defines all workflow nodes for GitDigest, organized by the CID pipeline (Collection, Intelligence, Delivery). GitDigest is the **Ground Truth Report**: it reads **actual code diffs** (not PR titles or commit messages) and uses AI to produce leadership-ready business and technical narratives. It is **project-centric** and **multi-repo**—synthesizing your entire stack (frontend, backend, infra) into one unified product narrative.
 
 ---
 
 ## Primary Inputs
 
-The following inputs are available at the start of the GitFlow workflow:
+The following inputs are available at the start of the GitDigest workflow:
 
 - **`project_name`** (string): Name of the project or team (e.g., `Acme system`). Stored in WaveAssist and available via `waveassist.fetch_data("project_name")`.
 
@@ -405,13 +405,13 @@ A single combined email with the following sections:
 | **🚀 PRIMARY UPDATES**      | Shipped features from business report                                       |
 | **🛠️ REPOSITORY DEEP DIVE** | Repository-by-repository technical breakdown with status, tags, and changes |
 | **Poem**                    | 4-line tech-focused poem from technical report                              |
-| **Footer**                  | GitFlow branding and PDF attachment notice                                  |
+| **Footer**                  | GitDigest branding and PDF attachment notice                                  |
 
 **PDF Attachment:**
 
 - Generates a PDF version of the email using WeasyPrint
 - Attaches PDF to the email for easy sharing, printing, and offline viewing
-- PDF filename format: `GitFlow_Report_{project_name}_{timestamp}.pdf`
+- PDF filename format: `GitDigest_Report_{project_name}_{timestamp}.pdf`
 
 **LLM calls:** None
 
@@ -431,7 +431,7 @@ A single combined email with the following sections:
       },
       "pdf_attachment": {
           "enabled": True,
-          "file_name": "GitFlow_Report_...",
+          "file_name": "GitDigest_Report_...",
           "generated": True,
           "error": None
       }

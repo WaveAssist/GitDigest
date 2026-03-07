@@ -1,8 +1,8 @@
-title: "GitFlow - Ground Truth Engineering Report"
-key: "gitflow"
-slug: "gitflow"
-name: "GitFlow"
-description: "GitFlow: The Ground Truth Report for CEOs, CTOs, and Product leaders—project-centric and multi-repo. AI reads the actual code diffs across your entire stack (frontend, backend, infra) and converts what really shipped into one unified, leadership-ready business + technical narrative (single email + PDF)."
+title: "GitDigest - Ground Truth Engineering Report"
+key: "gitdigest"
+slug: "gitdigest"
+name: "GitDigest"
+description: "GitDigest: The Ground Truth Report for CEOs, CTOs, and Product leaders—project-centric and multi-repo. AI reads the actual code diffs across your entire stack (frontend, backend, infra) and converts what really shipped into one unified, leadership-ready business + technical narrative (single email + PDF)."
 repo_url: "https://github.com/WaveAssist/GitFlow"
 repo_name: "GitFlow"
 tags:
@@ -10,8 +10,8 @@ tags:
   - "engineering"
   - "executive-reporting"
   - "cross-stack"
-thumbnail: "/images/templates/gitflow.png"
-primary_image: "/images/templates/gitflow.png"
+thumbnail: "/images/templates/gitdigest.png"
+primary_image: "/images/templates/gitdigest.png"
 badges:
   - "AI Engineering Report"
   - "Ground Truth"
@@ -87,12 +87,12 @@ testimonials:
     name: "Priya S."
     role: "Marketing Lead"
 faqs:
-  - q: "What makes GitFlow different?"
+  - q: "What makes GitDigest different?"
     a: "It reads the actual code diffs, not PR titles or commit messages, and produces AI-generated business + technical summaries from what really shipped."
   - q: "How does it handle multiple repositories?"
-    a: "GitFlow is project-centric: AI synthesizes diffs across all your repos (frontend, backend, infra) into one unified product narrative, connecting cross-stack features automatically."
+    a: "GitDigest is project-centric: AI synthesizes diffs across all your repos (frontend, backend, infra) into one unified product narrative, connecting cross-stack features automatically."
   - q: "Do I need multiple emails?"
-    a: "No. GitFlow delivers one combined email plus a PDF attachment—perfect for CEO, CTO, Product, and Marketing audiences."
+    a: "No. GitDigest delivers one combined email plus a PDF attachment—perfect for CEO, CTO, Product, and Marketing audiences."
   - q: "How often does it run?"
     a: "Weekly by default (Monday 8:30 AM UTC), or on-demand if you trigger it. Each report covers the past 7 days of activity."
   - q: "Which models are supported?"
@@ -103,13 +103,13 @@ pricing:
   unit: "Credits used per weekly run"
   cost: "$0.3"
 pro_section:
-  badge: "GitFlow Pro"
+  badge: "GitDigest Pro"
   title: "Enterprise-grade, audit-ready engineering intelligence."
   subtitle: "Private deployments with custom models, delivered in 7 days."
   highlight:
     label: "Why customise"
     title: "Compliance & control"
-    description: "Run GitFlow in your infrastructure with custom model policies, role-tailored outputs, and full audit trails—tuned to your leadership templates and compliance requirements."
+    description: "Run GitDigest in your infrastructure with custom model policies, role-tailored outputs, and full audit trails—tuned to your leadership templates and compliance requirements."
   cards:
     - title: "Custom Model Policy"
       description: "Pin models, set temperature/limits, and enforce data residency for compliance-sensitive environments."
@@ -144,9 +144,9 @@ numbers:
     label: "Credits per run"
 related_articles:
   - title: "Why code diffs beat PR titles for engineering truth"
-    href: "/blog/gitflow-ground-truth-diffs"
+    href: "/blog/gitdigest-ground-truth-diffs"
   - title: "How to brief executives with one weekly engineering email"
-    href: "/blog/gitflow-leadership-reporting"
+    href: "/blog/gitdigest-leadership-reporting"
   - title: "Building audit-ready engineering reports with WaveAssist"
     href: "/blog/waveassist-audit-ready-reports"
 related_assistants:
@@ -160,26 +160,26 @@ related_assistants:
     href: "/assistants/wavecrypto"
     desc: "AI-powered cryptocurrency price forecasts using technical signals, news sentiment, fundamentals, and analyst ratings."
 seo:
-  title: "GitFlow | AI Ground Truth Engineering Report"
-  meta_description: "GitFlow turns actual code diffs across all your repos into a unified, leadership-ready business + technical report. One weekly AI-generated email + PDF, grounded in what really shipped. Project-centric, multi-repo synthesis for CEOs, CTOs, and Product leaders."
-  canonical: "https://waveassist.io/assistants/gitflow"
+  title: "GitDigest | AI Ground Truth Engineering Report"
+  meta_description: "GitDigest turns actual code diffs across all your repos into a unified, leadership-ready business + technical report. One weekly AI-generated email + PDF, grounded in what really shipped. Project-centric, multi-repo synthesis for CEOs, CTOs, and Product leaders."
+  canonical: "https://waveassist.io/assistants/gitdigest"
   schema_type: "SoftwareApplication"
-  keywords: "AI engineering report, code diff analysis, GitFlow, executive engineering summary, audit-ready engineering, AI code reporting, multi-repo synthesis, cross-stack visibility, ground truth reporting"
-  og_title: "GitFlow: Ground Truth Engineering Reports from Code Diffs"
+  keywords: "AI engineering report, code diff analysis, GitDigest, executive engineering summary, audit-ready engineering, AI code reporting, multi-repo synthesis, cross-stack visibility, ground truth reporting"
+  og_title: "GitDigest: Ground Truth Engineering Reports from Code Diffs"
   og_description: "Unified visibility across your entire stack: AI reads the diffs and delivers one business + technical report each week. Project-centric, multi-repo synthesis for leadership."
-  og_image: "https://waveassist.io/images/templates/gitflow/gitflow.png"
-  og_url: "https://waveassist.io/assistants/gitflow"
+  og_image: "https://waveassist.io/images/templates/gitdigest/gitdigest.png"
+  og_url: "https://waveassist.io/assistants/gitdigest"
   og_type: "website"
   twitter_card: "summary_large_image"
-  twitter_title: "GitFlow — AI Ground Truth Engineering Report"
+  twitter_title: "GitDigest — AI Ground Truth Engineering Report"
   twitter_description: "AI reads your code diffs across all repos and ships one weekly business + technical report, email + PDF. The ground truth of your engineering week."
-  twitter_image: "https://waveassist.io/images/templates/gitflow/gitflow.png"
+  twitter_image: "https://waveassist.io/images/templates/gitdigest/gitdigest.png"
   robots: "index, follow"
   schema_additional: |
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "GitFlow",
+      "name": "GitDigest",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
