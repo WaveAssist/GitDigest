@@ -18,7 +18,7 @@ GitDigest is the **Ground Truth Report** for CEOs, CTOs, Heads of Product, and M
 ## One-Click Deploy on WaveAssist (Recommended)
 
 <p>
-  <a href="https://waveassist.io" target="_blank">
+  <a href="https://waveassist.io/assistants/gitdigest" target="_blank">
     <img src="https://waveassist.io/images/templates/Button.png" alt="Deploy on WaveAssist" width="230" />
   </a>
 </p>
