@@ -1,4 +1,4 @@
-<h1 align="center">GitDigest: The Ground Truth Engineering Report</h1>
+<h1 align="center">GitDigest - Automated Weekly Changelog</h1>
 
 <p align="center">
   <a href="https://waveassist.io">
@@ -11,7 +11,7 @@
 
 ## Overview
 
-GitDigest is the **Ground Truth Report** for CEOs, CTOs, Heads of Product, and Marketing. It is **project-centric**: AI reads all your repos (frontend, backend, infra) to build one **Unified Executive Summary** from the **actual code diffs**, the only source of truth for what really shipped. Every week, GitDigest turns raw diffs into AI-generated, leadership-ready business and technical narratives you can trust for board updates, release notes, and roadmap decisions.
+GitDigest automatically documents every code change across your repos. Get one plain-English changelog every Monday, no manual work, just AI-powered documentation.
 
 ---
 
