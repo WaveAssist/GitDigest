@@ -1,10 +1,13 @@
-<h1 align="center">GitDigest - Automated Weekly Changelog</h1>
+<h1 align="center">GitDigest: Open-Source AI Agent for Weekly Git Changelogs</h1>
 
 <p align="center">
-  <a href="https://waveassist.io">
-    <img src="https://img.shields.io/badge/Deploy_with-WaveAssist-007F3B" alt="Deploy with WaveAssist" />
+  <a href="https://waveassist.io/assistants/gitdigest">
+    <img src="https://img.shields.io/badge/Deploy_with-WaveAssist-007F3B" alt="Deploy GitDigest on WaveAssist" />
   </a>
-  <img src="https://img.shields.io/badge/GitDigest-weekly%20git%20reports-purple" alt="GitDigest Badge" />
+  <img src="https://img.shields.io/badge/GitDigest-AI%20Weekly%20Git%20Changelog%20Agent-purple" alt="GitDigest AI weekly changelog agent badge" />
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
+  </a>
 </p>
 
 ---
@@ -19,11 +22,11 @@ GitDigest automatically documents every code change across your repos. Get one p
 
 <p>
   <a href="https://waveassist.io/assistants/gitdigest" target="_blank">
-    <img src="https://waveassist.io/images/templates/Button.png" alt="Deploy on WaveAssist" width="230" />
+    <img src="https://waveassist.io/images/templates/Button.png" alt="Deploy GitDigest on WaveAssist" width="230" />
   </a>
 </p>
 
-Deploy GitDigest instantly on [WaveAssist](https://waveassist.io) — a zero-infrastructure automation platform that handles orchestration, scheduling, secrets, and hosting for you.
+Deploy GitDigest instantly on [WaveAssist](https://waveassist.io) — a zero-infrastructure AI agent platform that handles orchestration, scheduling, secrets, and hosting for you.
 
 > 🔐 You may be prompted to log in or create a free WaveAssist account before continuing.
 
@@ -99,3 +102,7 @@ GitDigest follows a CID pipeline (Collection, Intelligence, Delivery) anchored o
 - **PDF attachment:** Leadership-ready PDF included for sharing/printing.
 - **Model selection:** Configurable AI model (default: Claude Haiku 4.5).
 - **Taglines:** “The ground truth of your engineering week.” · “Stop reading PRs. Start seeing progress.” · “Where your codebase meets your boardroom.”
+
+---
+
+Built with ❤️ by the [WaveAssist](https://waveassist.io) team. Questions or integrations? [Say hello](https://waveassist.io).
